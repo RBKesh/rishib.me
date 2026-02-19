@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi's Website</title>
+    <meta name="description" content="A premium interactive personal portfolio.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <!-- Boxicons for Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <a href="#hero" class="logo">Portfo<span class="accent">lio.</span></a>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#about" class="nav-link" data-hover-trigger>About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link" data-hover-trigger>Projects</a></li>
+                <li class="nav-item"><a href="#notes" class="nav-link" data-hover-trigger>Notes</a></li>
+            </ul>
+        </nav>
+
+        <button class="nav-toggle" aria-label="toggle navigation" data-hover-trigger>
+            <span class="hamburger"></span>
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+
+            <div class="container hero-content">
+                <h2 class="hero-subtitle reveal-text">Hello, I'm</h2>
+                <h1 class="hero-title reveal-text">Rishi <span class="gradient-text">Bhaskara</span></h1>
+                <p class="hero-description reveal-text">
+                    A curious builder pushing the limits of ideation and engineering
+                </p>
+                <div class="hero-buttons reveal-text">
+                    <a href="#projects" class="btn btn-primary" data-hover-trigger>View Work</a>
+                    <a href="#notes" class="btn btn-secondary" data-hover-trigger>Read Notes</a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Scroll</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header reveal-scroll">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text reveal-scroll">
+                        <p>
+                            I'm a passionate, engineering student who aims to bridge the gap between design and
+                            technology.
+                            I create solutions from just thoughts on a paper, striving for excellence.
+                        </p>
+                        <p>
+                            With a focus on interaction design and performance, I deliver solutions that are
+                            not only functional but also challenge norms.
+                        </p>
+
+                        <div class="skills-grid">
+                            <div class="skill-item" data-hover-trigger>
+                                CAD
+                                <div class="skill-tooltip">Designing precise 3D mechanical components in
+                                    SolidWorks with consideration for manufacturing and real-world constraints.</div>
+                            </div>
+                            <div class="skill-item" data-hover-trigger>
+                                Embedded Systems
+                                <div class="skill-tooltip">Building hardware-integrated systems using microcontrollers
+                                    like Arduino and Raspberry Pi for automation and control.</div>
+                            </div>
+                            <div class="skill-item" data-hover-trigger>
+                                Mechanical Fabrication
+                                <div class="skill-tooltip">Manufacturing and modifying physical components using
+                                    hand and power tools with attention to fit, function, and safety.</div>
+                            </div>
+                            <div class="skill-item" data-hover-trigger>
+                                Programming
+                                <div class="skill-tooltip">Developing software using languages like
+                                    HTML, CSS, JavaScript, Python, and occasionally R.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Placeholder for an image or graphic -->
+                    <div class="about-image reveal-scroll">
+                        <div class="profile-card">
+                            <div class="profile-orbit">
+                                <div class="profile-center">
+                                    <img src="images/shield.jpg" alt="UBC Mascot Heist">
+                                </div>
+                                <!-- Orbiting Socials -->
+                                <a href="https://github.com/RBKesh" target="_blank" class="orbit-item item-1"
+                                    data-tooltip="GitHub"><i class='bx bxl-github'></i></a>
+                                <a href="https://www.linkedin.com/in/rishi-bhaskara-0683a4255/" target="_blank"
+                                    class="orbit-item item-2" data-tooltip="LinkedIn"><i
+                                        class='bx bxl-linkedin'></i></a>
+                                <a href="https://www.instagram.com/rishibhask/" target="_blank"
+                                    class="orbit-item item-3" data-tooltip="Instagram"><i
+                                        class='bx bxl-instagram'></i></a>
+                                <a href="mailto:rbkesh@hotmail.com" class="orbit-item item-4" data-tooltip="Mail"><i
+                                        class='bx bx-envelope'></i></a>
+                            </div>
+                            <p class="orbit-caption">That time we "borrowed" the UBC engineering mascot at a conference
+                                (totally legal).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header reveal-scroll">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card reveal-scroll" data-hover-trigger>
+                        <div class="project-image">
+                            <!-- Smart Mirror Image -->
+                            <img src="images/smart-mirror.jpg" alt="Smart Mirror" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Smart Mirror</h3>
+                            <p class="project-description">IoT-enabled mirror integrating local time, weather, news, and
+                                calendar via APIs.</p>
+                            <div class="project-tags">
+                                <span>Raspberry Pi</span>
+                                <span>Python</span>
+                                <span>APIs</span>
+                            </div>
+                            <a href="#" class="project-link">View Project &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card reveal-scroll" data-hover-trigger>
+                        <div class="project-image">
+                            <!-- Pelletizer Image -->
+                            <img src="images/pelletizer.jpg" alt="Open Source Recycled Plastic Pelletizer"
+                                class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Open Source Recycled Plastic Pelletizer</h3>
+                            <p class="project-description">Sustainable hardware solution for converting plastic waste
+                                into 3D printing filament.</p>
+                            <div class="project-tags">
+                                <span>Hardware</span>
+                                <span>Engineering</span>
+                                <span>Sustainability</span>
+                            </div>
+                            <a href="#" class="project-link">View Project &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3: Upcoming -->
+                    <article class="project-card reveal-scroll" data-hover-trigger>
+                        <div class="project-image">
+                            <!-- Gradient placeholder -->
+                            <div class="project-placeholder p3" style="animation: pulse 2s infinite ease-in-out;"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Upcoming Project</h3>
+                            <p class="project-description">Currently in the R&D phase, exploring new frontiers in
+                                autonomous systems and applied AI.</p>
+                            <div class="project-tags">
+                                <span>Robotics</span>
+                                <span>AI</span>
+                                <span>Stealth Mode</span>
+                            </div>
+                            <span class="project-link" style="cursor: default; opacity: 0.7;">Coming Soon...</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notes Section (Replaces Contact) -->
+        <section id="notes" class="section notes-section">
+            <div class="container">
+                <div class="section-header reveal-scroll">
+                    <h2 class="section-title">Brain Dump</h2>
+                    <p style="color: var(--text-secondary);">Drag the notes around!</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="notes-board-container reveal-scroll">
+                    <div class="notes-board">
+
+                        <div class="sticky-note note-yellow" style="top: 10%; left: 5%; transform: rotate(-3deg);">
+                            <div class="pin"></div>
+                            <div class="note-date">Today</div>
+                            <h3>Quantum State</h3>
+                            <p>My GPA is currently in a superposition. It is both good and bad until I actually check
+                                the portal.</p>
+                        </div>
+
+                        <div class="sticky-note note-blue" style="top: 15%; left: 35%; transform: rotate(2deg);">
+                            <div class="pin"></div>
+                            <div class="note-date">3 AM</div>
+                            <h3>AGI Thoughts</h3>
+                            <p>If AI takes our jobs, can it at least take my Calculus II midterm first? Asking for a
+                                friend.</p>
+                        </div>
+
+                        <div class="sticky-note note-pink" style="top: 40%; left: 60%; transform: rotate(-5deg);">
+                            <div class="pin"></div>
+                            <div class="note-date">Urgent</div>
+                            <h3>Eng Life</h3>
+                            <p>Sleep schedule is currently O(n!) where n is the number of assignments due tomorrow.</p>
+                        </div>
+
+                        <div class="sticky-note note-green" style="top: 50%; left: 10%; transform: rotate(4deg);">
+                            <div class="pin"></div>
+                            <div class="note-date">Idea</div>
+                            <h3>Smart Toaster?</h3>
+                            <p>An AI toaster that refuses to toast bread if it detects you're sad. "You need a salad,
+                                Dave."</p>
+                        </div>
+
+                        <div class="sticky-note note-yellow" style="top: 60%; left: 40%; transform: rotate(-2deg);">
+                            <div class="pin"></div>
+                            <div class="note-date">Lab Update</div>
+                            <h3>Robotics Startup</h3>
+                            <p>With AI taking the world by storm, how can I take advantage of it to help start my
+                                robotics startup?</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Rishi Bhaskara</div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Rishi Bhaskara. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-content">
+            <button class="modal-close"><i class='bx bx-x'></i></button>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
